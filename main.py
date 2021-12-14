@@ -6,7 +6,8 @@ import base64
 from flask import Flask,request
 import os
 app = Flask(__name__)
-  
+
+
 @app.route('/', methods=['POST','GET'])
 def hello():
     content_type = request.headers.get('Content-Type')
